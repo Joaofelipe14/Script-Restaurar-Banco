@@ -1,0 +1,20 @@
+Tabela: BAIRRO
+Quantidade de dados: 69082
+Status: SUCESSO
+
+Tabela: BANCO
+Quantidade de dados: 34
+Status: SUCESSO
+
+Tabela: CAMPOS
+Quantidade de dados: 479
+Status: SUCESSO
+
+Tabela: BAIRRO
+Quantidade de dados: 69082
+Status: SUCESSO
+
+Tabela: BAIRRO
+Quantidade de dados: 1
+Status: SUCESSO
+
