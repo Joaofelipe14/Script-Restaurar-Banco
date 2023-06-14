@@ -1,0 +1,288 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "angular-agir-ambiental": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/angular-agir-ambiental",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              {
+                "glob": "ellipse-5.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "filtro-bolinhas.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "frame-2.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "frame-3.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "gota-2.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "gota-3.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "gota.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005232.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005234.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005236.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005244.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005263.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005267.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005268.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005278.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005279.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005280.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-1000005281.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group-10000052441.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "group1.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "mask-group@2x.png",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "mask-group1@2x.png",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "mask-group2@2x.png",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "mask-group3@2x.png",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "mask-group4.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "ri02.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "vector.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "vector1.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "vector2.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "vector3.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "vector4.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "vector5.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "vector6.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "vector7.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              {
+                "glob": "vector8.svg",
+                "input": "src/",
+                "output": "/"
+              },
+              "src/manifest.webmanifest"
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "1mb",
+                  "maximumError": "1mb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-agir-ambiental:build:production"
+            },
+            "development": {
+              "browserTarget": "angular-agir-ambiental:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "angular-agir-ambiental:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/manifest.webmanifest"
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "c7d83a1c-cbbf-4cb9-9e95-201b7eb31214"
+  }
+}
